@@ -1,0 +1,174 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.nav-bar {
+    background: #222;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px;
+    background-image: url('https://media.istockphoto.com/id/1417602445/fr/photo/lunettes-de-soleil-de-couleur-dor%C3%A9e-brillante-en-plastique-transparent-lunettes-vue-de-dessus.webp?a=1&b=1&s=612x612&w=0&k=20&c=8E1Kf2P3GQMkrznpo7XDtocdrIegNVpL8yr8OK9UsGE=');
+    background-size:contain; 
+    margin-top: 2%;
+}
+
+/* Products Section */
+.products {
+    padding: 40px;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 5% 5% 0% 5%;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.shop-btn {
+    background: #222;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.shop-btn:hover {
+    background: #ff5733;
+}
+/* Newsletter section */
+.text-letter{
+    text-align: center;
+    background: rgba(210, 205, 205, 0.7);
+    width: 40%;
+    padding: 30px;
+    border-radius: 10px;
+}
+.newsletter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.text-letter button{
+    background-color: rgb(17, 17, 16);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+.newsletter input {
+    padding: 5px 30px;
+    border-radius: 3px;
+    border: none;
+    
+    
+}
+.newsletter p{
+    margin-top: 4px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.style-icon {
+	display: flex;
+	align-items: center;
+    justify-content: space-around;
+	margin: 0.5% 47%;
+}
+.style-icon a{
+    color:white;
+}
+
+/* media queries to create a responsive layout*/
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 3px;
+    }
+
+    .newsletter p{
+        margin-top: 4px;
+        margin-bottom: 6px;
+    }
+
+    .text-letter button{
+        margin-top: 10px;
+    }
+
+    .style-icon{
+        display: flex;
+        justify-content:center;
+        gap: 6px;
+        margin-top: 3px;
+
+    }
+
+}
+
+
